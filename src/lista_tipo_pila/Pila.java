@@ -70,11 +70,12 @@ public class Pila {
         int tamanoaux = TamanoPila();
 
         for (int i = tamanoaux; i > 0; i--) {
+            
 
             lista+=ultimovaloraux.informacion+"\n";
             
             ultimovaloraux = ultimovaloraux.siguiente;
-            tamanoaux--;
+            
 
         }
         JOptionPane.showMessageDialog(null, lista);
