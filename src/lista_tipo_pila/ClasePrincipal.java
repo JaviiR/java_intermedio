@@ -55,8 +55,8 @@ public class ClasePrincipal {
                     case 4:
 
                         if (!pila.PilaVacia()) {
-                            int valor = pila.MostrarUltValorIngresado();
-                            JOptionPane.showMessageDialog(null, "El ultimo valor ingresado en la pila es: " + valor);
+                            int UltValor = pila.MostrarUltValorIngresado();
+                            JOptionPane.showMessageDialog(null, "El ultimo valor ingresado en la pila es: " + UltValor);
                         } else {
                             JOptionPane.showMessageDialog(null, "La pila esta vacia.");
                         }
@@ -64,11 +64,11 @@ public class ClasePrincipal {
                         break;
                     case 5:
                         if (!pila.PilaVacia()) {
-                            int valor = pila.TamanoPila();
-                            if (valor > 1) {
-                                JOptionPane.showMessageDialog(null, "La pila posee " + valor + " nodos.");
+                            int tamano = pila.TamanoPila();
+                            if (tamano > 1) {
+                                JOptionPane.showMessageDialog(null, "La pila posee " + tamano + " nodos.");
                             } else {
-                                JOptionPane.showMessageDialog(null, "La pila posee " + valor + " nodo.");
+                                JOptionPane.showMessageDialog(null, "La pila posee " + tamano + " nodo.");
                             }
                         } else {
                             JOptionPane.showMessageDialog(null, "La pila esta vacia.");
