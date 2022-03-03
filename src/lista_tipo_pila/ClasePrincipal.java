@@ -12,11 +12,11 @@ public class ClasePrincipal {
     public static void main(String[] args) {
         int opcion = 0;
         Pila pila = new Pila();
-        JOptionPane pane=new JOptionPane();
+        
         try {
             while (opcion != 8) {
                 try {
-                    opcion = Integer.parseInt(pane.showInputDialog(null,
+                    opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                         "1. Insertar un Nodo.\n"
                         + "2. Eliminar un nodo.\n"
                         + "3. ¿La pila esta vacia?\n"
