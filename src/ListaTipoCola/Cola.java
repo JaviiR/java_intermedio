@@ -1,5 +1,7 @@
 package ListaTipoCola;
 
+import javax.swing.JOptionPane;
+
 public class Cola {
     private Nodo inicioCola,finalCola;
     String Cola="";
@@ -56,10 +58,17 @@ public class Cola {
         String ColaInvertida="";
 
         while (recorrido!=null) {
-            Cola+=recorrido.informacion;
+            Cola+=recorrido.informacion+" ";
             recorrido=recorrido.siguiente;
         }
         String cadena[]=Cola.split(" ");
+
+
+        for(int i=cadena.length-1;i>=0;i--){
+            ColaInvertida+=" "+cadena[i];
+        }
+        JOptionPane.showMessageDialog(null, ColaInvertida);
+        Cola="";
     }
     
 }
