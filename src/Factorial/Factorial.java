@@ -1,6 +1,6 @@
 package Factorial;
 
-import javax.swing.JOptionPane;
+
 
 public class Factorial {
     private int iniciar=1;
